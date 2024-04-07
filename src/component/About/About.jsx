@@ -26,6 +26,15 @@ export default function About() {
               expedita at? Asperiores nemo possimus nesciunt dicta veniam
               aspernatur quam mollitia.
             </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur sequi debitis non sit magnam alias porro, minus eos
+              quo culpa consectetur impedit itaque asperiores eaque ut repellat
+              deleniti eum earum repudiandae. Magni, voluptate? Est dicta
+              reiciendis iure illo neque earum doloribus facilis sit autem
+              saepe.
+            </p>
+            <h1>Aashish Mishra</h1>
           </div>
         </div>
       </div>
