@@ -18,6 +18,9 @@ import Mason from './component/Servises/Mason.jsx'
 import Painter from './component/Servises/Painter.jsx'
 import Plumber from './component/Servises/Plumber.jsx'
 import Electrician from './component/Servises/Electrician.jsx'
+import SignIn from './component/Signin/Signin.jsx'
+import SignUp from './component/SignUpWorker/SignUpWorker.jsx'
+import SignUpUser from './component/SignUp/signup.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,6 +28,9 @@ const router = createBrowserRouter(
       <Route path="" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/signin" element={<SignIn />} />
+      <Route path="/singinworker" element={<SignUp />} />
+      <Route path="/singinuser" element={<SignUpUser />} />
       <Route path="/services" element={<AllServise />}></Route>
       <Route path="/services/carpenter" element={<Carpenter />} />
       <Route path="/services/labour" element={<Labour />} />

@@ -1,27 +1,24 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import url from '/logo.png'
 
 export default function Header() {
   return (
-    <header className="shadow sticky z-50 top-0">
+    <header className="shadow bg-[#252525] opacity-90 sticky z-50 top-0">
       <nav className=" border-gray-200 px-4 lg:px-6 py-2.5">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <Link to="/" className="flex items-center">
-            <img
-              src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
-              className="mr-3 h-12"
-              alt="Logo"
-            />
+            <img src={url} className="mr-3 h-16" alt="Logo" />
           </Link>
           <div className="flex items-center gap-4 lg:order-2">
             <Link
-              to="#"
+              to="/signin"
               className="text-white hover:bg-[#FF204E] ring-2 ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
             >
               Login/Signup User
             </Link>
             <Link
-              to="#"
+              to="/singinworker"
               className="text-white bg-[#FF204E] hover:bg-[#D4312B] focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
             >
               Join as Workder
@@ -80,18 +77,7 @@ export default function Header() {
                   Contact
                 </NavLink>
               </li>
-              <li>
-                <NavLink
-                  to="/github"
-                  className={({ isActive }) =>
-                    `block py-2 pr-4 pl-3 duration-200 ${
-                      isActive ? 'text-[#FF204E]' : 'text-white'
-                    } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
-                  }
-                >
-                  Github
-                </NavLink>
-              </li>
+              <li></li>
             </ul>
           </div>
         </div>

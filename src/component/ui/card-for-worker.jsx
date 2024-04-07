@@ -38,6 +38,7 @@ function HoverEffect({ items, className }) {
             <CardImage>{item.src}</CardImage>
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
+            <CardBtn />
           </Card>
         </a>
       ))}
@@ -57,6 +58,10 @@ function Card({ className, children }) {
   )
 }
 
+function CardImage({ className, children }) {
+  return <img src={children} />
+}
+
 function CardTitle({ className, children }) {
   return (
     <h4 className={`text-zinc-100 font-bold tracking-wide mt-4 ${className}`}>
@@ -64,9 +69,17 @@ function CardTitle({ className, children }) {
     </h4>
   )
 }
-
-function CardImage({ className, children }) {
-  return <img className={``} src={children} />
+function CardBtn({ className, children }) {
+  return (
+    <div className=" flex justify-between mt-4">
+      <button className="px-4 py-2 text-lg text-white bg-[#FF204E] rounded-lg">
+        View record
+      </button>
+      <button className="px-4 py-2 text-lg text-white bg-[#FF204E] rounded-lg">
+        Book
+      </button>
+    </div>
+  )
 }
 
 function CardDescription({ className, children }) {
