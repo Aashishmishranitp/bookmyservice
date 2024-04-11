@@ -2,19 +2,18 @@ import React from 'react'
 import { useState } from 'react'
 // import { cn } from '../../utils/cn'
 import { AnimatePresence, motion } from 'framer-motion'
-// import Link from 'next/link'
 
 function HoverEffect({ items, className }) {
   let [hoveredIndex, setHoveredIndex] = useState(null)
 
   return (
     <div
-      className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10 ${className}`}
+      className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10 ${className}`}
     >
       {items.map((item, idx) => (
         <a
           href={item?.link}
-          key={item?.link}
+          key={item?.title}
           className="relative group block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
@@ -36,7 +35,10 @@ function HoverEffect({ items, className }) {
           )}
           <Card>
             <CardImage>{item.src}</CardImage>
-            <CardTitle>{item.title}</CardTitle>
+            <div className=" flex gap-10">
+              <CardTitle>{item.title}</CardTitle>
+              <CardRatting>{item.ratting}</CardRatting>
+            </div>
             <CardDescription>{item.description}</CardDescription>
             <CardBtn />
           </Card>
@@ -64,11 +66,19 @@ function CardImage({ className, children }) {
 
 function CardTitle({ className, children }) {
   return (
-    <h4 className={`text-zinc-100 font-bold tracking-wide mt-4 ${className}`}>
+    <h4 className={`text-zinc-100 font-bold tracking-wide mt-2 ${className}`}>
       {children}
     </h4>
   )
 }
+function CardRatting({ className, children }) {
+  return (
+    <h4 className={`text-zinc-100 font-bold tracking-wide mt-2  ${className}`}>
+      ⭐{children}
+    </h4>
+  )
+}
+
 function CardBtn({ className, children }) {
   return (
     <div className=" flex justify-between mt-4">
@@ -85,7 +95,7 @@ function CardBtn({ className, children }) {
 function CardDescription({ className, children }) {
   return (
     <p
-      className={`mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm ${className}`}
+      className={`mt-4 text-zinc-400 tracking-wide leading-relaxed text-sm ${className}`}
     >
       {children}
     </p>

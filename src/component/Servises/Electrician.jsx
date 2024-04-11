@@ -24,14 +24,15 @@ function Electrician() {
     {
       src: 'https://digitallabourchowk.com/assets/images/PAINTER%20copy.svg',
       title: 'Raj',
+      ratting: 4.7,
       description:
-        'Transform your spaces with beauty and finesse, Get the Painting job done by our experts and reshape your dream Home',
+        " I'm an electrician and hava mere than 10 years of experience.My specialization in Home electricity solutions, AC and Coor reparing.",
     },
     {
       src: 'https://digitallabourchowk.com/assets/images/electrician%20copy.svg',
       title: 'Chandra Prakash',
       description:
-        'Count on us for all your professional and dependable electrical jobs that keep your property running smoothly and safely.',
+        'Count on us for all your professional and dependable electrical jobs that keep your property running smoothly and safely. My specialization in Home electricity solutions, AC and Coor reparing.',
     },
     {
       src: 'https://digitallabourchowk.com/assets/images/plumber%20copy.svg',
