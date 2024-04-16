@@ -1,8 +1,11 @@
-# React + Vite
+# BOOKMYSERVICE
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Web-Application for booking home and office services with real-time interaction with workers
 
-Currently, two official plugins are available:
+- Frontend:
+  <ul>
+    <li> ReactJS (framework) </li>
+    <li> JavaScript(language)</li>
+  </ul>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Some glimpse of application
