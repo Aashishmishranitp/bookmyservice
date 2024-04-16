@@ -7,8 +7,8 @@ import url from '/image.png'
 function Home() {
   return (
     <div>
-      <div className=" w-full h-[45rem]">
-        <img className="w-full h-[45rem]" src={url} alt="" />
+      <div className=" w-full h-[30rem] flex justify-center">
+        <img className="w-full h-[30rem]" src={url} alt="" />
       </div>
       <HeroCard
         src="https://digitallabourchowk.com/assets/images/why%20dlc.svg"

@@ -10,7 +10,7 @@ export default function Header() {
           <Link to="/" className="flex items-center">
             <img src={url} className="mr-3 h-16" alt="Logo" />
           </Link>
-          <div className="flex items-center gap-4 lg:order-2">
+          <div className="flex items-center justify-center gap-20 md:gap-4 lg:order-2">
             <Link
               to="/signin"
               className="text-white hover:bg-[#FF204E] ring-2 ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
