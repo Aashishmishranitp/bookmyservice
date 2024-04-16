@@ -25,5 +25,6 @@ Some glimpse of application
 </ul>
 
 ```
-     npm i  
+     npm i
+     npm run dev
 ```
